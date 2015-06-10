@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Book & Cook Home </title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/timepicker.css" rel="stylesheet">
+        <link href="css/datepicker.css" rel="stylesheet">
+        
+        
+        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
+        
+        
+        
+        <script src= "js/jquery.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/timepicker.js"></script>
+    <script src="js/daterangepicker.js"></script>
+
+    <script>
+                                function handleChange(input) {
+                                    if (input.value < 0)
+                                        input.value = 0;
+                                    if (input.value > 100)
+                                        input.value = 100;
+                                }
+    </script>
+
+   
+
+<script type="text/javascript">
+            $('#timepicker5').timepicker({
+                template: false,
+                showInputs: false,
+                minuteStep: 5
+            });
+        </script>
+
+        
+
+    </head>
+    <body>
+        <header>
+
+
+
+
+            <div class="well">
+
+                <div class="container">
+                    <h1>Book & Cook</h1>
+
+
+                </div> 
+            </div> 
+        </header>
+
+
+
+
+        <div class="container">
+            <div class="col-lg-6">
+                <form action="">
+                    <div class="row">
+
+
+
+
+
+                        <select  class="btn btn-default col-lg-5 pager dropdown-toggle" data-toggle="dropdown">
+                            <option> Country  </option>
+                            <option> Pakistan </option>
+
+                        </select>
+
+
+
+
+
+
+
+                        <select  class="btn btn-default col-lg-5 pager dropdown-toggle" data-toggle="dropdown">
+                            <option> Province  </option>
+                            <option> Punjab </option>
+                            <option> KPK</option>
+                            <option> Sindh </option>
+
+
+                        </select>
+
+
+                    </div>
+
+
+                    <div class="row">
+
+                        <select  class="btn btn-default col-lg-5 pager dropdown-toggle" data-toggle="dropdown">
+                            <option> City  </option>
+                            <option> Lahore </option>
+                            <option> Karachi </option>
+                            <option>  Peshwer </option>
+
+
+                        </select>
+
+
+
+                        <select  class="btn btn-default col-lg-5 pager dropdown-toggle" data-toggle="dropdown">
+                            <option> Area </option>
+                            <option> Mall Road </option>
+                            <option> Model Town </option>
+                            <option> Ichraa </option>
+
+                        </select>
+
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="row">
+                        <div class="col-lg-10 pager">
+                            <input type="text" class="form-control" placeholder="Select Restaurant">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-10 pager">
+                            <input type="number" placeholder="Number of People" class="form-control" onchange="handleChange(this);" onkeypress='validate(event)' />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <select  class="btn btn-default col-lg-10 pager dropdown-toggle" data-toggle="dropdown">
+                            <option> To Eat </option>
+                            <option> Break Fast </option>
+                            <option> Lunch </option>
+                            <option> Dinner </option>
+
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <select  class="btn btn-default col-lg-10 pager dropdown-toggle" data-toggle="dropdown">
+                            <option> Recipes </option>
+                            <option> Chicken Korma </option>
+                            <option> Bryani </option>
+                            <option> Achari Krhahi </option>
+
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-10 pager">
+
+                            <input id="datepicker" placeholder="Select Date" data-provide="datepicker" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-lg-10 pager">
+                            <div class="input-group input-append bootstrap-timepicker">
+                                <input type="text" placeholder="Select Time" class="form-control" id="timepicker5">
+                                <span class="add-on input-group-addon"><i class="fa fa-clock-o"></i></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    
+                    <script type="text/javascript">
+            $('#timepicker5').timepicker({
+                template: false,
+                showInputs: false,
+                minuteStep: 1
+            });
+        </script>
+
+
+
+
+                    <div class="col-lg-2 pager"> <a href="" class="btn btn-success"> Confirm </a> </div>
+
+
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-10 pager">
+                        <input type="text" class="form-control" placeholder="More Restaurant with these preference">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        
+
+
+
+
+       
+
+    </body>
+
+    
+</html>

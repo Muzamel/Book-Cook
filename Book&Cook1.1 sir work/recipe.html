@@ -1,0 +1,242 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cook&Book</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="My Recipes Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<!--webfont-->
+<script src="js/responsiveslides.min.js"></script>
+ 
+  <script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+  <!------ Light Box ------>
+    <link rel="stylesheet" href="css/swipebox.css">
+    <script src="js/jquery.swipebox.min.js"></script> 
+   
+    <!------ Eng Light Box ------>
+	 <!-- Script for gallery Here -->
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						
+						var filterList = {
+						
+							init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+							
+							},
+							
+							hoverEffect: function () {
+							
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+								);				
+							
+							}
+				
+						};
+						
+						// Run the show!
+						filterList.init();
+						
+						
+					});	
+					</script>
+				<!--Animation-->
+
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+
+</head>
+<body>
+    <!-- header-section-starts -->
+	<div class="header">
+		<div class="container">
+			<div class="logo wow bounceInDown animated" data-wow-delay="0.4s">
+				<a href="index.html"><img src="img/logo.png" alt="" /></a>
+			</div>
+			<div class="header-right wow fadeInLeft animated" data-wow-delay="0.5s">
+				
+							<script>(function(d, s, id) {
+							  var js, fjs = d.getElementsByTagName(s)[0];
+							  if (d.getElementById(id)) return;
+							  js = d.createElement(s); js.id = id;
+							  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+							  fjs.parentNode.insertBefore(js, fjs);
+							}(document, 'script', 'facebook-jssdk'));</script>
+					<div class="fb-like" data-href="" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+				</div>
+				<div class="search">
+						<form>
+							<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"/>
+							<input type="submit" value="">
+						</form>
+					</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	
+	
+					<!-- script-for-menu -->
+						<script>
+							$("span.menu").click(function(){
+								$(".top-menu ul").slideToggle("slow" , function(){
+								});
+							});
+						</script>
+						<!-- script-for-menu -->
+	
+	<div class="gallery">
+		<!-- portfolio -->
+			<div class="portfolio-section" id="portfolio">			
+				<!-- head-section -->
+					<div class="head-section text-center">
+						<h2 class="wow fadeInLeft animated" data-wow-delay="0.4s">Recipe Based restaurants</h2>
+					</div>
+					<!-- /head-section -->
+				 <ul id="filters" class="clearfix wow fadeInUpBig animated animated" data-wow-delay="0.4s">
+						<li class="active"><span class="filter" data-filter="app card icon logos web">ALL</span></li>
+						<li><span class="filter" data-filter="app">Meals</span></li>
+						<li><span class="filter" data-filter="card">Deserts</span></li>
+						<li><span class="filter" data-filter="icon"></span></li>
+						<li><span class="filter" data-filter="logos">Salad</span></li>
+						</ul>
+					<div id="portfoliolist">
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="img/pic-1.jpg" class="swipebox"  title="Image Title"> <img src="img/pic-1.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span> </a> 
+
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="img/pic-2.jpg" class="swipebox"  title="Image Title"> <img src="img/pic-2.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>					
+					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="img/pic-6.jpg" class="swipebox"  title="Image Title"> <img src="img/pic-6.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+
+					</div>
+					
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="img/pic-4.jpg" class="swipebox"  title="Image Title"> <img src="img/pic-4.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>			
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="img/pic-5.jpg" class="swipebox"  title="Image Title"> <img src="img/pic-5.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="img/pic-3.jpg" class="swipebox"  title="Image Title"> <img src="img/pic-3.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>	
+					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="img/pic-1.jpg" class="swipebox"  title="Image Title"> <img src="img/pic-1.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+						</div>
+						<div class="portfolio logos mix_all wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="img/pic-2.jpg" class="swipebox"  title="Image Title"> <img src="img/pic-2.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>
+						<div class="portfolio logos mix_all wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="img/pic-6.jpg" class="swipebox"  title="Image Title"> <img src="img/pic-6.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="img/pic-4.jpg" class="swipebox"  title="Image Title"> <img src="img/pic-4.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="img/pic-5.jpg" class="swipebox"  title="Image Title"> <img src="img/pic-5.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>	
+						</div>
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="img/pic-3.jpg" class="swipebox"  title="Image Title"> <img src="img/pic-3.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>					
+<div class="clearfix"></div>					
+				</div>			
+<div class="clearfix"></div>	
+			</div>
+
+			</div>
+		
+	
+	<!-- footer-section-starts -->
+	<div class="footer">
+		<div class="container">
+			<p class="wow bounceInLeft animated" data-wow-delay="0.4s">Cook&Book &copy; 2015  All rights  Reserved | Design By Cook&Book team<a href="http://w3layouts.com" target="target_blank"></a></p>
+		</div>
+	</div>
+	<!-- footer-section-ends -->
+	<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</body>
+</html>
