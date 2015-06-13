@@ -2,8 +2,8 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class restaurant extends Model {
+class Restaurant extends Model {
 
-	//
+
 
 }

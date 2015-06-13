@@ -26,18 +26,6 @@
                 });
 
 
-                $('#timepicker5').timepicker({
-                    template: false,
-                    showInputs: false,
-                    minuteStep: 5
-                });
-
-                $('#timepicker6').timepicker({
-                    template: false,
-                    showInputs: false,
-                    minuteStep: 5
-                });
-
 
 
 

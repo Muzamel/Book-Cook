@@ -24,9 +24,33 @@ Route::get('login',function(){
     return response()->view('login');
 });
 
+Route::get('sign_in',function(){
+    return response()->view('admin_panel.login1');
+
+});
+
 Route::resource('index','HomeController@home');
 
+Route::resource('User','UserController@index');
 
+Route::resource('restaurants','RestaurantsController');
 
-Route::resource('User','Usercontroller@index');
+Route::post('enter_date','RestaurantsController@reservation_ajax');
+
+Route::get('calendar',function(){
+
+    return response()->view('admin_panel.calendar');
+
+});
+
+Route::get('reservation',function(){
+
+    return response()->view('admin_panel.reservation');
+
+});
+
+Route::resource('admin_panel','Admin_panelController');
+
+Route::resource('restaurantAdmin','Restaurant_adminController');
+
 
