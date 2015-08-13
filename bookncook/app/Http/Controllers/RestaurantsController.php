@@ -9,6 +9,9 @@ use App\Reservation;
 use App\Restaurant;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\View;
 
 class RestaurantsController extends Controller {
 
@@ -42,6 +45,13 @@ class RestaurantsController extends Controller {
 	public function store()
 	{
 
+        $restaurant=new restaurant();
+        $restaurant->name=Input::get('name');
+        $restaurant->address=Input::get('address');
+        $restaurant->land_line_no=Input::get('land_no');
+        $restaurant->mobile_no=Input::get('mob_no');
+        $restaurant->save();
+        return Redirect::to('admin_panel');
 
 
 //
@@ -54,15 +64,15 @@ class RestaurantsController extends Controller {
 
 
 
-        $people = new people();
-        $people->no_of_people= Input::get('no_people');
-        $people->date= Input::get('dates');
-
-//        $people->project_start_date = Input::get('proj_start_date');
-//        $people->project_end_date = Input::get('proj_end_date');
-//        $people->project_description= Input::get('proj_description');
-        $people->save();
-        return redirect('restaurants');
+//        $people = new people();
+//        $people->no_of_people= Input::get('no_people');
+//        $people->date= Input::get('dates');
+//
+////        $people->project_start_date = Input::get('proj_start_date');
+////        $people->project_end_date = Input::get('proj_end_date');
+////        $people->project_description= Input::get('proj_description');
+//        $people->save();
+//        return redirect('restaurants');
 
 //
 //        $falak=new people();
@@ -146,7 +156,8 @@ class RestaurantsController extends Controller {
     }
 	public function destroy($id)
 	{
-		//
+		Restaurant::find($id)->delete();
+        return Redirect::to('../../admin_panel');
 	}
 
 }

@@ -143,19 +143,22 @@
 
 <div class="container" id="addrestaurant" >
         <div style="margin-left: 20%; width: 50%" >
-        		            <input type="text" class="form-control" placeholder="Enter Restaurant Name" autofocus>
+        {!! Form::open(array('url' => 'restaurants')) !!}
+
+        		            <input name="name" type="text" class="form-control" placeholder="Enter Restaurant Name" autofocus>
         		            <br>
-        		            <input type="text" class="form-control" placeholder="Enter Restaurant Address">
+        		            <input name='address' type="text" class="form-control" placeholder="Enter Restaurant Address">
         		            <br>
-                            <input type="number" class="form-control" placeholder="Enter Restaurant Land line Number">
+                            <input name="land_no" type="number" class="form-control" placeholder="Enter Restaurant Land line Number">
                             <br>
-                            <input type="number" class="form-control" placeholder="Enter Restaurant Mobile Number">
+                            <input name="mob_no" type="number" class="form-control" placeholder="Enter Restaurant Mobile Number">
                             <br>
 
-                            <button type="button" style="align-right:100px" class="btn btn-success" >Add</button>
+                            <button type="submit" style="align-right:100px" class="btn btn-success" >Add</button>
                             <br>
                             <br>
 
+{!!Form::close()!!}
 
 {{--id="myname"--}}
         		            </div>
@@ -192,11 +195,12 @@
 {{--             <td><a href="{{url('restaurants',$restaurant->id)}}" class="btn btn-primary">Read</a></td>--}}
 {{--             <td><a href="{{route('books.edit',$book->id)}}" class="btn btn-warning">Update</a></td>--}}
              <td>
-             {!! Form::open(['method' => 'DELETE', 'route'=>['restaurants.destroy', $restaurant->id]]) !!}
-             {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
+             {!! Form::open(array('url' => 'restaurants/' . $restaurant->id)) !!}
+                                 {!! Form::hidden('_method', 'DELETE') !!}
+                                 {!! Form::submit('Delete', array('class' => 'btn btn-danger')) !!}
+                             {!! Form::close() !!}
              <button type="button" class="btn btn-info">Update</button>
              <button type="button" class="btn btn-warning">Licence Renew</button>
-             {!! Form::close() !!}
              </td>
          </tr>
      @endforeach
