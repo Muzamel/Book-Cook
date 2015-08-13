@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 24, 2015, 4:29:47 PM
+    Author     : Umer
+*/
+
+.navbar{
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-left: 10px;
+}
+
+.navbar ul{
+    float: left;
+
+
+}
+.navbar ul li{
+    list-style: none;
+    height: 50px;
+    width:100px;
+    margin-top: 10px;
+    background-color: white;
+}
+.navleft{
+    height: 200px;
+    width: 310px;
+
+    float: left;
+    margin-left: 780px;
+
+}
+
+.navleft ul{
+    float: left;
+
+
+}
+.navleft ul li{
+    list-style: none;
+    height: 50px;
+    width:100px;
+    margin-top: 10px;
+    background-color: white;
+}
+body{
+    background-image: url(../img/custmize_cooking.jpg);
+    background-position:fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+
+}
+table{
+    border-style: groove;
+    border-width: 10px;
+    border-color: tomato
+
+}
+ul table tr td{
+    color: black;
+    text-align: center;
+    font-size: 25px;
+
+}   
